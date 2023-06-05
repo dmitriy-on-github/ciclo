@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'CalSans';
+  font-display: swap;
+  src:
+    url('../../fonts/CalSans-SemiBold.woff2') format('woff2'),
+    url('../../fonts/CalSans-SemiBold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*font-weight
+100 - thin
+200 - UltraLite
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+800 - Heavy
+900 - black
+*/
+
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-arrow-right:before {
+  content: "\e900";
+}
+._icon-git:before {
+  content: "\e901";
+}
+._icon-instagram:before {
+  content: "\e902";
+}
+._icon-link:before {
+  content: "\e903";
+}
+._icon-linkedin:before {
+  content: "\e904";
+}
+._icon-twitter:before {
+  content: "\e905";
+}

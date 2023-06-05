@@ -1,0 +1,31 @@
+//=====================================<HEADER>=================================
+.header {
+	color: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;left: 0;
+	z-index: 50;
+	padding: 5px 0px;
+	transform: translate(0px, -100%);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.header__menu {}
+.menu {
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	min-height: 50px;
+	align-items: center;
+}
+.menu__link {
+	font-size: 20px;
+	transition: color 0.3s ease 0s;
+	margin-right: 10px;
+	&._active{
+		color: #7a956b;
+	}
+	@media (max-width: $md3+px){
+		font-size: 14px;
+	}
+}
+//=====================================</HEADER>================================
